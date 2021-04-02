@@ -1,0 +1,226 @@
+<html>
+<head>
+    <title>Poultry Disease and Treatment</title>
+    <style>
+        .top1 {width: 12%; height: 15%; float: left;}
+       
+        .top2 {width: 88%; height: 15%; float: left;}
+        
+        .unlist {height:48px; font-size: 17px; list-style-type: none; margin: 0; padding: 0; overflow: hidden; 
+                 margin-bottom: 10px; background-color: #222; }
+        .list {float: left;}
+        .list a {display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;}
+        .list a:hover:not(.active) {background-color: #111;}
+        .active {background-color: #4CAF50;} 
+
+        .dropbtn {background-color: #444; color: white; padding: 16px; font-size: 14px; border: none;
+                  cursor: pointer;}
+        .dropdown {position: relative; display: inline-block;}
+        .dropdown-content {display: none; position: absolute; right: 0; background-color: #333; min-width: 160px;
+                          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3); z-index: 1;}
+        .dropdown-content a {color: white; padding: 12px 16px; text-decoration: none; display: block;}
+        .dropdown-content a:hover {background-color: #111;}
+        .dropdown:hover .dropdown-content {display: block;}
+        .dropdown:hover .dropbtn {background-color: #111;}
+
+        .left1 {width: 12%; height: 100%; float: left;}
+       
+        .content1 {width: 68%; height: 100%; float: left;}
+       
+        .right1 {width: 20%; height: 100%; float: left;}
+       
+        .bottom1 {width: 12%; height: 19%; background-color: #444; float: left;}
+        .bottom2 {width: 68%; height: 19%; background-color: #444; float: left;}
+        .bottom3 {width: 20%; height: 19%; background-color: #444; float: left;}
+        .bottoma {color: wheat;}
+        .bottoma:hover {color: skyblue;}  
+
+    </style>
+          <link rel="stylesheet" href="commonstyle.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"></script>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.min.css">
+          <script src="https://kit.fontawesome.com/65d13b9961.js" crossorigin="anonymous"></script>
+          
+</head>
+<body style="background-color: #333; color: whitesmoke;">
+    <div class="top1">
+        
+    </div>
+    <div class="top2">
+        <ul class="unlist">
+            <li class="list"><a class="active" href="index.html">Home</a></li>
+            <li class="list"><a href="about.html">About</a></li>
+        </ul>
+        <div class="dropdown" style="float:left;">
+          <button class="dropbtn">Cattle</button>
+          <div class="dropdown-content" style="left:0;">
+          <a href="Cattlebreed.html">Breeds</a>
+          <a href="Cattledisease.html">Disease & Treatment</a>
+          </div>
+        </div>
+        <div class="dropdown" style="float:left;">
+          <button class="dropbtn">Sheep & Goat</button>
+          <div class="dropdown-content" style="left:0;">
+          <a href="sheep&goatbreed.html">Breeds</a>
+          <a href="sheep&goatdisease.html">Disease & Treatment</a>
+          </div>
+        </div>
+        <div class="dropdown" style="float:left;">
+          <button class="dropbtn">Poultry</button>
+          <div class="dropdown-content" style="left:0;">
+          <a href="poultrybreed.html">Breeds</a>
+          <a href="poultrydisease.html">Disease & Treatment</a>
+          </div>
+        </div>
+        <div class="dropdown" style="float:left;">
+          <button class="dropbtn">Pet Animals</button>
+          <div class="dropdown-content" style="left:0;">
+          <a href="cat.html">Cat</a>
+          <a href="dog.html">Dog</a>
+          </div>
+        </div>
+        <div class="dropdown" style="float: right; right: 10;">
+          <a href="search-for-doctor.html"><button class="dropbtn"><i class="fas fa-search"></i> &nbsp;Search for a Doctor...</button></a>
+        </div>
+
+        
+    </div>
+    <div class="left1">
+
+    </div>
+
+    <div class="content1">
+      <br><br><br>
+      <form>
+        <label>Select Symptoms: </label> 
+        <select id="diseases" class="chosen" onchange="diseasedisplay(this)">
+          <option>...</option>
+          <option id="ai" value="1">Dark red/white spots; facial swelling; respiratory distress; drop in egg production</option>
+          <option id="nd" value="2">Watery discharge from nostrils; paralysis; trembling</option>
+          <option id="md" value="3">Feathers roughened; paralysis of legs, wings, neck; vision impairment; irregular pupils</option>
+        </select>
+      </form>
+      <br><br><br>
+      <span id="dis1" style="display: none;" >
+      <h3>Avian Influenza: </h3>
+      <p>Avian influenza is categorized as mild or highly pathogenic. It is a viral disease. Wild waterfowl and shorebirds are often asymptomatic carriers.
+        Low pathogenicity strains typically cause respiratory signs. High pathogenicity strains may cause widespread organ failure and sudden, high mortality.</p>
+      <b>Symptoms: </b>
+      <ul>
+        <li style="margin-top: -10px;">The mild form produces loss of appetite, respiratory distress, diarrhea, transient drops in egg production.</li>
+        <li>The highly pathogenic form produces facial swelling, dehydration with respiratory distress.</li>
+        <li>Dark red/white spots develop in the legs and of chickens.</li>
+      </ul>
+      <b>Prevention: </b>
+      <ul>
+        <li style="margin-top: -10px;">Prevention is by practice of exclusion biosecurity strategies and vaccination.</li>
+        <li>Quarantine, depopulation and eradication of virulent form is mandated to avoid spreading of the virus.</li>
+      </ul>
+      <b>Treatment: </b>
+      <ul>
+        <li style="margin-top: -10px;">Antiviral treatments are not approved for poultry.</li>
+        <li>Although with the mild form of the disease, good husbandry, proper nutrition, and broad spectrum antibiotics may reduce losses from secondary infections.</li>
+      </ul>
+      <b>Vaccination: </b>CEVAC® FLU H9 K Vaccine
+      </span>
+
+      <span id="dis2" style="display: none;" >
+        <h3>Newcastle Disease: </h3>
+        <p>Newcastle disease virus is a single-stranded, non-segmented enveloped RNA virus. Incubation period is 2-15 days. Newcastle disease is characterized by the following sudden symptoms: </p>
+        <b>Symptoms: </b>
+        <ul>
+          <li style="margin-top: -10px;">Paralysis</li> 
+          <li>Trembling and Gasping</li> 
+          <li>Twisting of the neck</li>
+          <li>Watery discharge from nostrils.</li>
+        </ul>
+        <b>Prevention: </b>
+        <ul>
+          <li style="margin-top: -10px;">Vaccination at day of age in the hatchery using a course spray machine. </li>
+        </ul>
+
+        <b>Treatment: </b>
+        <ul>
+          <li style="margin-top: -10px;">Antibiotics can be given for 3-5 days to prevent secondary bacterial infections.</li>
+          <li>Increasing the brooding temperature 5°F may help reduce losses</li>
+        </ul>
+        <b>Vaccination: </b>Newcastle Disease (LaSota Strain) Vaccine
+      </span>
+
+      <span id="dis3" style="display: none;" >
+        <h3>Marek's Disease: </h3>
+        <p>Marek's disease is a Herpes virus infection of chickens. The route of infection is usually respiratory and the disease is highly contagious being spread by infective feather-follicle dander.</p>
+        <b>Symptoms: </b>
+        <ul>
+          <li style="margin-top: -10px;">Paralysis of legs, wings and neck.</li>
+          <li>Loss of weight.</li>
+          <li>Grey iris or irregular pupil.</li>
+          <li>Vision impairment.</li>
+          <li>Skin around feather follicles raised and roughened.</li> 
+        </ul>
+        <b>Prevention: </b>
+        <ul>
+          <li style="margin-top: -10px;">It is common practice to use combinations of the different vaccine types in an effort to broaden the protection achieved.</li>
+          <li>Genetics can help by increasing the frequency of the B21 gene that confers increased resistance to Marek's disease challenge.</li>
+        </ul>
+        <b>Treatment: </b>
+        <ul>
+          <li style="margin-top: -10px;">No specific treatment.</li>
+        </ul>
+        <b>Vaccination: </b>Marek's Disease Vaccine (HVT)
+      </span>
+
+        <script>
+          function diseasedisplay(select)
+          {
+            if (select.value==1)
+            {
+              document.getElementById('dis1').style.display = "block";
+              document.getElementById('dis2').style.display = "none"; document.getElementById('dis3').style.display = "none";
+            }
+            else if (select.value==2)
+            {
+              document.getElementById('dis2').style.display = "block";
+              document.getElementById('dis1').style.display = "none"; document.getElementById('dis3').style.display = "none";
+            }
+            else if (select.value==3)
+            {
+              document.getElementById('dis3').style.display = "block";
+              document.getElementById('dis1').style.display = "none"; document.getElementById('dis2').style.display = "none";
+            }
+            else
+            { 
+              document.getElementById('dis1').style.display = "none"; document.getElementById('dis2').style.display = "none"; document.getElementById('dis3').style.display = "none"; 
+            }
+          }
+        </script>
+
+    </div>
+
+    <div class="right1">
+
+    </div>
+
+    <div class="bottom1">
+
+    </div>
+    <div class="bottom2">
+      <div style="text-align: center; padding: 20px 15px;">
+        <a class="bottoma" href="feedback.html"><i class="fas fa-comments"></i> Give Your Feedback</a>&nbsp; |&nbsp;
+        <a class="bottoma" href="references.html"><i class="fas fa-link"></i> References</a> &nbsp;|&nbsp;
+      </div>
+    </div>
+    <div class="bottom3">
+
+    </div>
+
+
+
+</body>
+<script type="text/javascript">
+  $(".chosen").chosen();
+</script>
+</html>

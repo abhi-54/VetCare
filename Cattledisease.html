@@ -1,0 +1,240 @@
+<html>
+<head>
+    <title>Cattle Disease & Treatment</title>
+    <style>
+        .top1 {width: 12%; height: 15%; float: left;}
+       
+        .top2 {width: 88%; height: 15%; float: left;}
+        
+        .unlist {height:48px; font-size: 17px; list-style-type: none; margin: 0; padding: 0; overflow: hidden; 
+                 margin-bottom: 10px; background-color: #222; }
+        .list {float: left;}
+        .list a {display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;}
+        .list a:hover:not(.active) {background-color: #111;}
+        .active {background-color: #4CAF50;} 
+
+        .dropbtn {background-color: #444; color: white; padding: 16px; font-size: 14px; border: none;
+                  cursor: pointer;}
+        .dropdown {position: relative; display: inline-block;}
+        .dropdown-content {display: none; position: absolute; right: 0; background-color: #333; min-width: 160px;
+                          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3); z-index: 1;}
+        .dropdown-content a {color: white; padding: 12px 16px; text-decoration: none; display: block;}
+        .dropdown-content a:hover {background-color: #111;}
+        .dropdown:hover .dropdown-content {display: block;}
+        .dropdown:hover .dropbtn {background-color: #111;}
+
+        .left1 {width: 12%; height: 100%; float: left;}
+       
+        .content1 {width: 68%; height: 100%; float: left;}
+       
+        .right1 {width: 20%; height: 100%; float: left;}
+       
+        .bottom1 {width: 12%; height: 19%; background-color: #444; float: left;}
+        .bottom2 {width: 68%; height: 19%; background-color: #444; float: left;}
+        .bottom3 {width: 20%; height: 19%; background-color: #444; float: left;}
+        .bottoma {color: wheat;}
+        .bottoma:hover {color: skyblue;}  
+
+        
+
+    </style>
+        <link rel="stylesheet" href="commonstyle.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.min.css">
+        <script src="https://kit.fontawesome.com/65d13b9961.js" crossorigin="anonymous"></script>
+</head>
+<body style="background-color: #333; color: whitesmoke;">
+    <div class="top1">
+        
+    </div>
+    <div class="top2">
+        <ul class="unlist">
+            <li class="list"><a class="active" href="index.html">Home</a></li>
+            <li class="list"><a href="about.html">About</a></li>
+        </ul>
+        <div class="dropdown" style="float:left;">
+          <button class="dropbtn">Cattle</button>
+          <div class="dropdown-content" style="left:0;">
+          <a href="Cattlebreed.html">Breeds</a>
+          <a href="Cattledisease.html">Disease & Treatment</a>
+          </div>
+        </div>
+        <div class="dropdown" style="float:left;">
+          <button class="dropbtn">Sheep & Goat</button>
+          <div class="dropdown-content" style="left:0;">
+          <a href="sheep&goatbreed.html">Breeds</a>
+          <a href="sheep&goatdisease.html">Disease & Treatment</a>
+          </div>
+        </div>
+        <div class="dropdown" style="float:left;">
+          <button class="dropbtn">Poultry</button>
+          <div class="dropdown-content" style="left:0;">
+          <a href="poultrybreed.html">Breeds</a>
+          <a href="poultrydisease.html">Disease & Treatment</a>
+          </div>
+        </div>
+        <div class="dropdown" style="float:left;">
+          <button class="dropbtn">Pet Animals</button>
+          <div class="dropdown-content" style="left:0;">
+          <a href="cat.html">Cat</a>
+          <a href="dog.html">Dog</a>
+          </div>
+        </div>
+        <div class="dropdown" style="float: right; right: 10;">
+          <a href="search-for-doctor.html"><button class="dropbtn"><i class="fas fa-search"></i> &nbsp;Search for a Doctor...</button></a>
+        </div>
+    </div>
+  
+    <div class="left1">
+    </div>
+
+    <div class="content1">
+      <br><br><br>
+      <form>
+        <label>Select Symptoms: </label> 
+        <select id="diseases" class="chosen" onchange="diseasedisplay(this)">
+          <option>...</option>
+          <option id="fmd" value="1">Fever(around 40ºC); saliva hanging out from mouth</option>
+          <option id="ant" value="2">Difficulty breathing; high temperature</option>
+          <option id="bq" value="3">Fever (41ºC-43ºC); high swelling; stops ruminating</option>
+          <option id="rabies" value="4">Sudden changes in behaviour; difficulty swallowing</option>
+        </select>
+      </form>
+      
+      <br><br><br>
+      <span id="dis1" style="display: none;" >
+      <h3>Foot & Mouth Disease (FMD): </h3>
+      <p>The foot-and-mouth disease is a highly communicable disease. It is characterized by fever, formation of vesicles and blisters in the mouth, udder, teats and on the skin between
+         the toes and above the hoofs. Animals recovered from the disease present a characteristically rough coat and deformation of the hoof.
+         In India, the disease is widespread and assumes a position of importance in livestock industry. The disease spreads by direct contact or indirectly through infected water,
+          manure, hay and pastures. It is also conveyed by cattle attendants. It is known to spread through recovered animals, field rats, porcupines and birds.</p>
+      <b>Symptoms: </b>
+      <ul>
+        <li style="margin-top: -10px;">Fever around 40 degree Celcius.</li>
+        <li>Ropes of stingy saliva hangs from mouth.</li>
+      </ul>
+      <b>Treatment: </b>
+      <ul>
+        <li style="margin-top: -10px;">Antiseptics can be applied externally to heal the ulcers and it can also help in warding off attacks by flies.</li>
+      </ul>
+      <b>Vaccination: </b>FMD Vaccine (FUTVAC)
+      </span>
+      <span id="dis2" style="display: none;">
+        <h3>Anthrax: </h3>
+        <p>Anhrax, a highly infectious and fatal disease of cattle, is caused by a relatively large spore-forming rectangular shaped bacterium called Bacillus anthracis. 
+          Anthrax causes acute mortality in ruminants. The bacteria produce extremely potent toxins which are responsible for the ill effects. 
+          Signs of the illness usually appear 3 to 7 days after the spores are swallowed or inhaled. Once signs begin in animals, they usually die within two days.</p>
+        <b>Symptoms: </b>
+        <ul>
+          <li style="margin-top: -10px;">Difficulty breathing - This usually occurs over a period of 24 hours.</li>
+          <li>High Temperature</li>
+        </ul>
+        <b>Treatment: </b>
+        <ul>
+          <li style="margin-top: -10px;">Due to the acute nature of the disease resulting in sudden death, treatment is usually not possible.</li>
+          <li>Prevention can be the only treatment. Regular annual vaccination of animals should be done.</li>
+        </ul>
+        <b>Vaccination: </b>Anthrax Spore Vaccine
+      </span>
+      <span id="dis3" style="display: none;">
+        <h3>BQ (Black Quarter): </h3>
+        <p>An acute disease of cattle characterized by swelling in heavy muscles. Contaminated pasture appears to be major source of infection. 
+          Healthy animals in the age group 6 months to 2 years are generally affected. Animal dies within 24-48 hours after appearance of symptoms.</p>
+        <b>Symptoms: </b>
+        <ul>
+          <li style="margin-top: -10px;">Sudden high  fever (41ºC-43ºC) and the animal stops eating and ruminating.</li>
+          <li>Swelling (hot) affects shoulders, chest and neck. </li>
+        </ul>
+        <b>Prevention: </b>
+        <ul>
+          <li style="margin-top: -10px;">Vaccinate all animals which are 6 months and above of age annually before the on­set of monsoon in endemic areas.</li>
+          <li>Sprinkle lime over carcass at the time of burial.</li>
+        </ul>
+        <b>Treatment: </b>
+        <ul>
+          <li style="margin-top: -10px;">Treatment may be effective in initial stages of infection. However in most cases treatment is not worth it.</li>
+        </ul>
+        <b>Vaccination: BQ Vaccine</b>
+      </span>
+      <span id="dis4" style="display: none;">
+        <h3>Rabies: </h3>
+        <p>A bite from an infected wild animal or even a dog, such as a fox or raccoon, is a common method of infection in cattle. Saliva is the main method of transmission of the virus
+           being shed through infected cattle and spreading through the body via the bloodstream. It travels to the spinal cord where it can incubate for 3-12 weeks. 
+           From the spine the virus moves into the brain, at which point clinical symptoms of rabies often appear in cattle. </p>
+        <b>Symptoms: </b>
+        <ul>
+          <li style="margin-top: -10px;">Cattle look very alert, aggresive and excited.</li>
+          <li>Cattle make different sounds very frequently.</li>
+          <li>Milk Production decreases rapidly due to lack of appetite and difficulty in swallowing.</li>
+        </ul>
+        <b>Prevention: </b>
+        <ul>
+          <li style="margin-top: -10px;">By limiting the number of wild animals carrying the virus and the chance that those animals will come in contact with pasture and farmland,
+             the likelihood of rabies transmission can be reduced. Number of dogs or cats can also be limited away from the cattleshed.</li>
+        </ul>
+        <b>Treatment: </b>
+        <ul>
+          <li style="margin-top: -10px;">Leaves of chirchra (Achyranthes aspera) 100gm and onion 50 gm are ground well and smeared over the bitten place. 
+            The extract of these ingredients is administered orally twice in a day.
+          </li>
+        </ul>
+        <b>Vaccination: </b>NOBIVAC® Rabies Vaccine
+      </span>
+      <script>
+        function diseasedisplay(select)
+        {
+          if (select.value==1)
+          {
+            document.getElementById('dis1').style.display = "block";
+            document.getElementById('dis2').style.display = "none"; document.getElementById('dis3').style.display = "none";
+            document.getElementById('dis4').style.display = "none"; 
+          }
+          else if (select.value==2)
+          {
+            document.getElementById('dis2').style.display = "block";
+            document.getElementById('dis1').style.display = "none"; document.getElementById('dis3').style.display = "none";
+            document.getElementById('dis4').style.display = "none"; 
+          }
+          else if (select.value==3)
+          {
+            document.getElementById('dis3').style.display = "block";
+            document.getElementById('dis1').style.display = "none"; document.getElementById('dis2').style.display = "none";
+            document.getElementById('dis4').style.display = "none"; 
+          }
+          else if (select.value==4)
+          {
+            document.getElementById('dis4').style.display = "block";
+            document.getElementById('dis1').style.display = "none"; document.getElementById('dis2').style.display = "none";
+            document.getElementById('dis3').style.display = "none"; 
+          }
+          else
+          { 
+            document.getElementById('dis1').style.display = "none"; document.getElementById('dis2').style.display = "none";
+            document.getElementById('dis3').style.display = "none"; document.getElementById('dis4').style.display = "none";
+          }
+        }
+      </script>
+    </div>
+
+    <div class="right1">
+    </div>
+
+    <div class="bottom1">
+    </div>
+    <div class="bottom2">
+      <div style="text-align: center; padding: 20px 15px;">
+        <a class="bottoma" href="feedback.html"><i class="fas fa-comments"></i> Give Your Feedback</a>&nbsp; |&nbsp;
+        <a class="bottoma" href="references.html"><i class="fas fa-link"></i> References</a> &nbsp;|&nbsp;
+      </div>
+    </div>
+    <div class="bottom3">
+    </div>
+
+</body>
+<script type="text/javascript">
+  $(".chosen").chosen();
+</script>
+</html>

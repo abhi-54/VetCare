@@ -1,0 +1,267 @@
+<html>
+<head>
+    <title>Sheep & Goat Disease and Treatment</title>
+    <style>
+        .top1 {width: 12%; height: 15%; float: left;}
+       
+        .top2 {width: 88%; height: 15%; float: left;}
+        
+        .unlist {height:48px; font-size: 17px; list-style-type: none; margin: 0; padding: 0; overflow: hidden; 
+                 margin-bottom: 10px; background-color: #222; }
+        .list {float: left;}
+        .list a {display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;}
+        .list a:hover:not(.active) {background-color: #111;}
+        .active {background-color: #4CAF50;} 
+
+        .dropbtn {background-color: #444; color: white; padding: 16px; font-size: 14px; border: none;
+                  cursor: pointer;}
+        .dropdown {position: relative; display: inline-block;}
+        .dropdown-content {display: none; position: absolute; right: 0; background-color: #333; min-width: 160px;
+                          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3); z-index: 1;}
+        .dropdown-content a {color: white; padding: 12px 16px; text-decoration: none; display: block;}
+        .dropdown-content a:hover {background-color: #111;}
+        .dropdown:hover .dropdown-content {display: block;}
+        .dropdown:hover .dropbtn {background-color: #111;}
+
+        .left1 {width: 12%; height: 100%; float: left;}
+       
+        .content1 {width: 68%; height: 100%; float: left;}
+       
+        .right1 {width: 20%; height: 100%; float: left;}
+       
+        .bottom1 {width: 12%; height: 19%; background-color: #444; float: left;}
+        .bottom2 {width: 68%; height: 19%; background-color: #444; float: left;}
+        .bottom3 {width: 20%; height: 19%; background-color: #444; float: left;}
+        .bottoma {color: wheat;}
+        .bottoma:hover {color: skyblue;}  
+        
+    </style>
+          <link rel="stylesheet" href="commonstyle.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"></script>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.min.css">
+          <script src="https://kit.fontawesome.com/65d13b9961.js" crossorigin="anonymous"></script>
+</head>
+<body style="background-color: #333; color: whitesmoke;">
+    <div class="top1">
+        
+    </div>
+    <div class="top2">
+        <ul class="unlist">
+            <li class="list"><a class="active" href="index.html">Home</a></li>
+            <li class="list"><a href="about.html">About</a></li>
+        </ul>
+        <div class="dropdown" style="float:left;">
+          <button class="dropbtn">Cattle</button>
+          <div class="dropdown-content" style="left:0;">
+          <a href="Cattlebreed.html">Breeds</a>
+          <a href="Cattledisease.html">Disease & Treatment</a>
+          </div>
+        </div>
+        <div class="dropdown" style="float:left;">
+          <button class="dropbtn">Sheep & Goat</button>
+          <div class="dropdown-content" style="left:0;">
+          <a href="sheep&goatbreed.html">Breeds</a>
+          <a href="sheep&goatdisease.html">Disease & Treatment</a>
+          </div>
+        </div>
+        <div class="dropdown" style="float:left;">
+          <button class="dropbtn">Poultry</button>
+          <div class="dropdown-content" style="left:0;">
+          <a href="poultrybreed.html">Breeds</a>
+          <a href="poultrydisease.html">Disease & Treatment</a>
+          </div>
+        </div>
+        <div class="dropdown" style="float:left;">
+          <button class="dropbtn">Pet Animals</button>
+          <div class="dropdown-content" style="left:0;">
+          <a href="cat.html">Cat</a>
+          <a href="dog.html">Dog</a>
+          </div>
+        </div>
+        <div class="dropdown" style="float: right; right: 10;">
+          <a href="search-for-doctor.html"><button class="dropbtn"><i class="fas fa-search"></i> &nbsp;Search for a Doctor...</button></a>
+        </div>
+
+        
+    </div>
+    <div class="left1">
+
+    </div>
+
+    <div class="content1">
+      <br><br><br>
+      <form>
+        <label>Select Symptoms: </label> 
+        <select id="diseases" class="chosen" onchange="diseasedisplay(this)">
+          <option>...</option>
+          <option id="ppr" value="1">Sudden rectal temperature (40°-41°C); dullness; coughing; serous discharge from eyes & nostrils</option>
+          <option id="pox" value="2">Symptoms of pneumonia; skin lesions</option>
+          <option id="tetanus" value="3">Wound infection; unsteady walking; suffocation; muscle stiffness</option>
+          <option id="footrot" value="4">Moist, swollen skin; weight gain; severe lameness</option>
+          <option id="sm" value="5">Red ulcers develop around mouth</option>
+        </select>
+      </form>
+      <br><br><br>
+      <span id="dis1" style="display: none;" >
+      <h3>PPR: </h3>
+      <p>PPR (Peste des petits ruminants) is the most viral disease of goat capable of heavy mortality and commonly called as goat plague. Secretions and excretions of sick animals are the sources of infection.</p>
+      <b>Symptoms: </b>
+      <ul>
+        <li style="margin-top: -10px;">In acute form, there is sudden onset of fever with rectal temperature of at least 40°- 41°C</li>
+        <li>Goats show dullness, sneezing, serous discharge from the eyes and nostrils</li>
+      </ul>
+      <b>Treatment: </b>
+      <ul>
+        <li style="margin-top: -10px;">Immediate isolation of affected goats from clinically healthy goats is most importance measure in controlling the spread of infection.</li>
+      </ul>
+      <b>Vaccination: </b>Live PPR Vaccine
+      </span>
+
+      <span id="dis2" style="display: none;" >
+        <h3>Sheep-Pox: </h3>
+        <p>Sheep-pox is a highly contagious disease. It causes a mortality of 20 to 50 per cent in animals below the age of 6 months, and causes damage to the wool and skin in adults.</p>
+  
+        <b>Symptoms: </b>
+        <ul>
+          <li style="margin-top: -10px;">The disease is characterized by high fever, and symptoms of pneumonia.</li>
+          <li>Skin lesions appear particularly in parts free from wool, notably around the eyes, inner side of the thigh, and under surface of the tail.</li>
+        </ul>
+        <b>Treatment: </b>
+        <ul>
+          <li style="margin-top: -10px;">The ulcers on the skin should be washed with potassium permanganate lotion and dusted with boric acid, and strict hygienic measures should be adopted.</li>
+          <li>Nursing is more important than medication for the young ones. Affected sheeps should be kept on soft diet.</li>
+        </ul>
+      </span>
+
+      <span id="dis3" style="display: none;" >
+        <h3>Tetanus: </h3>
+        <p>Infection of wounds by bacterium Clostridium tetani results in tetanus when the bacterium produces its potent toxin.</p>
+        <b>Symptoms: </b>
+        <ul>
+          <li style="margin-top: -10px;">Muscle stiffness, unsteady gait, drooping eyelids, changed voice, erect ears and tail and inability to eat or drink. </li>
+          <li>Death occurs from respiratory paralysis and suffocation.</li>
+        </ul>
+        <b>Prevention: </b>
+        <ul>
+          <li style="margin-top: -10px;">Annual vaccination is recommended for all goats.</li>
+          <li>Tools or equipments which may result into wound should be kept away from the shelter.</li>
+        </ul>
+        <b>Treatment: </b>
+        <ul>
+          <li style="margin-top: -10px;">The wound or infection site should be opened to the air and infiltrated with penicillin. 
+            The area can be infiltrated with tetanus antitoxin before the wound-cleansing process is begun to reduce the chance that more preexisting toxin will be absorbed in the tissue.</li>
+        </ul>
+        <b>Vaccination: </b>CDT(also know as CD&T) Vaccine
+      </span>
+
+      <span id="dis4" style="display: none;" >
+        <h3>Footrot: </h3>
+        <p>Footrot is a contagious infection of the feet characterized by inflammation of the skin-horn junction, under-running of the horn, severe lameness.
+          Footrot in sheeps and goats is caused by a large bacterium <i>(Bacteroides nodosus).</i>
+        </p>
+        <b>Symptoms: </b>
+        <ul>
+          <li style="margin-top: -10px;">Moist, swollen skin which later on discharges foul smell from lesion.</li>
+          <li>Severe lameness, reduced feed intake, weight gain. Animal may die of starvation.</li>
+        </ul>
+        <b>Prevention: </b>
+        <ul>
+          <li style="margin-top: -10px;">Check animals for foot lesions periodically.</li>
+          <li>Trim hooves as needed.</li>
+        </ul>
+        <b>Treatment: </b>
+        <ul>
+          <li style="margin-top: -10px;">Isolate affected animals for treatment and trim hooves.</li>
+          <li>Treat the feet with a footbath solution of 16 percent copper sulfate or zinc sulfate. Animals must stand in the zinc or copper sulfate solution to allow time for absorption into the hoof wall.</li>
+        </ul>
+      </span>
+
+      <span id="dis5" style="display: none;" >
+        <h3>Scaby Mouth: </h3>
+        <p>Scabby mouth is a viral disease of sheep and goats that causes scabs and pustules, usually around the mouth and face of affected animals. 
+          It is also known as contagious pustular dermatitis, contagious ecthyma or orf.The scabs shed from infected sheep onto pasture and in yards can be infectious to other sheep for many years. 
+          Some sheep may also carry the virus and infect other sheep.</p>
+        <b>Symptoms: </b>
+        <ul>
+          <li style="margin-top: -10px;">Raised scabs with a red ulcerated area underneath the scab around the lips, muzzle, nostrils, eyes, feet, lower leg, anus, vulva, udder, scrotum and pizzle.</li>
+        </ul>
+        <b>Prevention: </b>
+        <ul>
+          <li style="margin-top: -10px;">While animals infected with scabby mouth usually recover uneventfully, it is particularly important to ensure animals being supplied for export do not have scabby mouth.</li>
+        </ul>
+        <b>Treatment: </b>
+        <ul>
+          <li style="margin-top: -10px;">Generally affected animals recover spontaneously with scabs healing in about 3–4 weeks.</li>
+        </ul>
+      </span>
+
+        <script>
+          function diseasedisplay(select)
+          {
+            if (select.value==1)
+            {
+              document.getElementById('dis1').style.display = "block";
+              document.getElementById('dis2').style.display = "none"; document.getElementById('dis3').style.display = "none"; document.getElementById('dis4').style.display = "none";
+              document.getElementById('dis5').style.display = "none";
+            }
+            else if (select.value==2)
+            {
+              document.getElementById('dis2').style.display = "block";
+              document.getElementById('dis1').style.display = "none"; document.getElementById('dis3').style.display = "none"; document.getElementById('dis4').style.display = "none";
+              document.getElementById('dis5').style.display = "none";
+            }
+            else if (select.value==3)
+            {
+              document.getElementById('dis3').style.display = "block";
+              document.getElementById('dis1').style.display = "none"; document.getElementById('dis2').style.display = "none"; document.getElementById('dis4').style.display = "none";
+              document.getElementById('dis5').style.display = "none";
+            }
+            else if (select.value==4)
+            {
+              document.getElementById('dis4').style.display = "block";
+              document.getElementById('dis1').style.display = "none"; document.getElementById('dis2').style.display = "none"; document.getElementById('dis3').style.display = "none";
+              document.getElementById('dis5').style.display = "none";
+            }
+            else if (select.value==5)
+            {
+              document.getElementById('dis5').style.display = "block";
+              document.getElementById('dis1').style.display = "none"; document.getElementById('dis2').style.display = "none"; document.getElementById('dis3').style.display = "none";
+              document.getElementById('dis4').style.display = "none";
+            }
+            else
+            { 
+              document.getElementById('dis1').style.display = "none"; document.getElementById('dis2').style.display = "none"; document.getElementById('dis3').style.display = "none";
+              document.getElementById('dis4').style.display = "none"; document.getElementById('dis5').style.display = "none";
+            }
+          }
+        </script>
+
+    </div>
+
+    <div class="right1">
+
+    </div>
+
+    <div class="bottom1">
+
+    </div>
+    <div class="bottom2">
+      <div style="text-align: center; padding: 20px 15px;">
+        <a class="bottoma" href="feedback.html"><i class="fas fa-comments"></i> Give Your Feedback</a>&nbsp; |&nbsp;
+        <a class="bottoma" href="references.html"><i class="fas fa-link"></i> References</a> &nbsp;|&nbsp;
+      </div>
+    </div>
+    <div class="bottom3">
+
+    </div>
+
+
+
+</body>
+<script type="text/javascript">
+  $(".chosen").chosen();
+</script>
+</html>

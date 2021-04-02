@@ -1,0 +1,242 @@
+<html>
+<head>
+    <title>Cat Diagnosis</title>
+    <style>
+        .top1 {width: 12%; height: 15%; float: left;}
+       
+        .top2 {width: 88%; height: 15%; float: left;}
+        
+        .unlist {height:48px; font-size: 17px; list-style-type: none; margin: 0; padding: 0; overflow: hidden; 
+                 margin-bottom: 10px; background-color: #222; }
+        .list {float: left;}
+        .list a {display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;}
+        .list a:hover:not(.active) {background-color: #111;}
+        .active {background-color: #4CAF50;} 
+
+        .dropbtn {background-color: #444; color: white; padding: 16px; font-size: 14px; border:none; cursor: pointer;}
+        .dropdown {position: relative; display: inline-block;}
+        .dropdown-content {display: none; position: absolute; right: 0; background-color: #333; min-width: 160px;
+                          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3); z-index: 1;}
+        .dropdown-content a {color: white; padding: 12px 16px; text-decoration: none; display: block;}
+        .dropdown-content a:hover {background-color: #111;}
+        .dropdown:hover .dropdown-content {display: block;}
+        .dropdown:hover .dropbtn {background-color: #111;}
+
+        .left1 {width: 12%; height: 100%; float: left;}
+       
+        .content1 {width: 68%; height: 100%; float: left;}
+       
+        .right1 {width: 20%; height: 100%; float: left;}
+       
+        .bottom1 {width: 12%; height: 19%; background-color: #444; float: left;}
+        .bottom2 {width: 68%; height: 19%; background-color: #444; float: left;}
+        .bottom3 {width: 20%; height: 19%; background-color: #444; float: left;}
+        .bottoma {color: wheat;}
+        .bottoma:hover {color: skyblue;}  
+
+    </style>
+          <link rel="stylesheet" href="commonstyle.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"></script>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.min.css">
+          <script src="https://kit.fontawesome.com/65d13b9961.js" crossorigin="anonymous"></script>
+          
+</head>
+<body style="background-color: #333; color: whitesmoke;">
+    <div class="top1">
+        
+    </div>
+    <div class="top2">
+        <ul class="unlist">
+            <li class="list"><a class="active" href="index.html">Home</a></li>
+            <li class="list"><a href="about.html">About</a></li>
+        </ul>
+        <div class="dropdown" style="float:left;">
+          <button class="dropbtn">Cattle</button>
+          <div class="dropdown-content" style="left:0;">
+          <a href="Cattlebreed.html">Breeds</a>
+          <a href="Cattledisease.html">Disease & Treatment</a>
+          </div>
+        </div>
+        <div class="dropdown" style="float:left;">
+          <button class="dropbtn">Sheep & Goat</button>
+          <div class="dropdown-content" style="left:0;">
+          <a href="sheep&goatbreed.html">Breeds</a>
+          <a href="sheep&goatdisease.html">Disease & Treatment</a>
+          </div>
+        </div>
+        <div class="dropdown" style="float:left;">
+          <button class="dropbtn">Poultry</button>
+          <div class="dropdown-content" style="left:0;">
+          <a href="poultrybreed.html">Breeds</a>
+          <a href="poultrydisease.html">Disease & Treatment</a>
+          </div>
+        </div>
+        <div class="dropdown" style="float:left;">
+          <button class="dropbtn">Pet Animals</button>
+          <div class="dropdown-content" style="left:0;">
+          <a href="cat.html">Cat</a>
+          <a href="dog.html">Dog</a>
+          </div>
+        </div>
+        <div class="dropdown" style="float: right; right: 10;">
+          <a href="search-for-doctor.html"><button class="dropbtn"><i class="fas fa-search"></i> &nbsp;Search for a Doctor...</button></a>
+        </div>
+
+        
+    </div>
+    <div class="left1">
+
+    </div>
+
+    <div class="content1">
+      <br><br><br>
+      <form>
+        <label>Select Symptoms: </label> 
+        <select id="diseases" class="chosen" onchange="diseasedisplay(this)">
+          <option>...</option>
+          <option id="ai" value="1">Lumps; Swelling; Vomiting; Change in behaviour</option>
+          <option id="nd" value="2">Weight loss; Pale or inflames gums; vision problems; Fever; Respiratory distress</option>
+          <option id="md" value="3">Sudden changes in behaviour; increased vocalization; disorientation; paralysis</option>
+        </select>
+      </form>
+      <br><br><br>
+      <span id="dis1" style="display: none;" >
+      <h3>Cancer: </h3>
+      <p>Cancer is a “multifactorial” disease, which means it has no known single cause.
+        Squamous cell carcinoma of the ear, eyelid or nose is a skin cancer caused by repeated exposure to the sun.
+        Lymphosarcoma or lymphoma (LSA), is one of the most common type of cancer in cats. Some reports estimate that 30% of all reported cat cancers are due to LSA.
+      </p>
+      <b>Symptoms: </b>
+      <ul>
+        <li style="margin-top: -10px;">Lumps </li>
+        <li>Swelling</li>
+        <li>Persistent sores or skin infections, scaly and/or red skin patches</li>
+        <li>Abnormal discharge from any part of the body</li>
+        <li>Bad breath, difficulty breathing, urinating or defecating</li>
+        <li>Weight loss, decreased or loss of appetite</li>
+        <li>Sudden lameness, change in behavior</li>
+        <li>Diarrhea or vomiting</li>
+      </ul>
+      <b>Prevention: </b>
+      <ul>
+        <li style="margin-top: -10px;">Keeping your cat indoors will protect her from certain skin cancers caused by repeated sun exposure and sunburn.</li>
+        <li>Breast cancer is a common cancer for cats, but it can be avoided by having your cat spayed before her first heat cycle.</li>
+      </ul>
+      <b>Treatment: </b>
+      <ul>
+        <li style="margin-top: -10px;">Common treatments include surgery, chemotherapy, radiation and immunotherapy or a combination of therapies.</li>
+        <li>Good nutrition and loving care can greatly enhance your cat’s quality of life.</li>
+      </ul>
+      </span>
+
+      <span id="dis2" style="display: none;" >
+        <h3>Feline Leukemia Virus (FelV): </h3>
+        <p>First discovered in the 1960s, feline leukemia virus is a transmittable RNA retrovirus that can severely inhibit a cat’s immune system. 
+            It is one of the most commonly diagnosed causes of disease and death in domestic cats. Because the virus doesn’t always manifest symptoms right away,
+             any new cat entering a household—and any sick cat—should be tested for FeLV.</p>
+        <b>Symptoms: </b>
+        <ul>
+          <li style="margin-top: -10px;">Loss of appetite and weight loss, changes in behavior, lethargy</li>
+          <li>Pale or inflamed gums, poor coat condition</li>
+          <li>Respiratory distress, upper respiratory infections</li>
+          <li>Vision or other eye problems</li>
+          <li>Chronic skin disease, seizures</li>
+          <li>Diarrhea and vomiting, jaundice</li>
+        </ul>
+        <b>Prevention: </b>
+        <ul>
+          <li style="margin-top: -10px;">There is a vaccine available for cats who are at risk of contracting FeLV. Like all vaccines, 
+            there are risks involved in vaccination, and the vaccine is not a 100% guarantee against infection.</li>
+          <li>As with any infectious disease, the best prevention is eliminating sources of exposure. 
+            Routine FeLV testing and keeping your cat indoors and away from cats whose FeLV status is not known remain the best way to prevent your cat from becoming infected.</li>
+        </ul>
+
+        <b>Treatment: </b>
+        <ul>
+          <li style="margin-top: -10px;">Feed your cat a nutritionally balanced diet, one free of raw meat, eggs and unpasteurized dairy products.</li>
+          <li>Provide a quiet place for your cat to rest indoors and away from other cats who could promote disease.</li>
+          <li>Sadly there is no cure for FeLV, and it is estimated that less than 20% of clinically infected cats survive more than three years of active infection.</li>
+        </ul>
+       </span>
+
+      <span id="dis3" style="display: none;" >
+        <h3>Rabies: </h3>
+        <p>Rabies is a viral disease that affects the brain and spinal cord of all mammals, including cats, dogs and humans. This preventable disease has been reported in every state except Hawaii. 
+            There’s good reason that the very word “rabies” evokes fear in people—once symptoms appear, rabies is close to 100% fatal.</p>
+        <b>Symptoms: </b>
+        <ul>
+          <li style="margin-top: -10px;">Changes in behavior (including aggression, restlessness and lethargy)</li>
+          <li>Increased vocalization</li>
+          <li>Loss of appetite</li>
+          <li>Weakness</li>
+          <li>Disorientation</li>
+          <li>Paralysis</li>
+          <li>Seizures</li>
+          <li>Sudden death</li>
+        </ul>
+        <b>Prevention: </b>
+        <ul>
+          <li style="margin-top: -10px;">Vaccination is the key.</li>
+          <li>Vaccinating your cat doesn't just protect her from rabies—it also protects your cat if she bites someone.</li>
+        </ul>
+        <b>Treatment: </b>
+        <ul>
+          <li style="margin-top: -10px;">The direct fluorescent antibody test is the most accurate test for diagnosis, but it can only be performed after the death of the animal.</li>
+          <li>There is no treatment or cure for rabies once symptoms appear. The disease results in fatality.</li>
+        </ul>
+      </span>
+
+        <script>
+          function diseasedisplay(select)
+          {
+            if (select.value==1)
+            {
+              document.getElementById('dis1').style.display = "block";
+              document.getElementById('dis2').style.display = "none"; document.getElementById('dis3').style.display = "none";
+            }
+            else if (select.value==2)
+            {
+              document.getElementById('dis2').style.display = "block";
+              document.getElementById('dis1').style.display = "none"; document.getElementById('dis3').style.display = "none";
+            }
+            else if (select.value==3)
+            {
+              document.getElementById('dis3').style.display = "block";
+              document.getElementById('dis1').style.display = "none"; document.getElementById('dis2').style.display = "none";
+            }
+            else
+            { 
+              document.getElementById('dis1').style.display = "none"; document.getElementById('dis2').style.display = "none"; document.getElementById('dis3').style.display = "none"; 
+            }
+          }
+        </script>
+
+    </div>
+
+    <div class="right1">
+
+    </div>
+
+    <div class="bottom1">
+
+    </div>
+    <div class="bottom2">
+      <div style="text-align: center; padding: 20px 15px;">
+        <a class="bottoma" href="feedback.html"><i class="fas fa-comments"></i> Give Your Feedback</a>&nbsp; |&nbsp;
+        <a class="bottoma" href="references.html"><i class="fas fa-link"></i> References</a> &nbsp;|&nbsp;
+      </div>
+    </div>
+    <div class="bottom3">
+
+    </div>
+
+
+
+</body>
+<script type="text/javascript">
+  $(".chosen").chosen();
+</script>
+</html>

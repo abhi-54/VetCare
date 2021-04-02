@@ -1,0 +1,6 @@
+::-webkit-scrollbar {width: 8px; overflow-x:hidden; height: 8px;}
+::-webkit-scrollbar-track {background: transparent}
+::-webkit-scrollbar-thumb {background: #888;}
+::-webkit-scrollbar-thumb:hover {background: #999;}
+select {width: 400px;}
+.chosen-container .chosen-results li.highlighted{background-color: #4CAF50;background-image:-webkit-gradient(linear,left top,left bottom,color-stop(20%,#4CAF50),color-stop(90%,#4CAF50));
