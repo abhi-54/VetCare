@@ -1,0 +1,7 @@
+@media screen and (max-width: 800px) 
+{
+  .left1, .top1, .right1, .bottom1, .bottom3 { width: 1%; height: auto;}
+  .top2, .content1, .bottom2 {width: 98%; height: auto;}
+  .dropdown, .dropbtn {width: 100%;}
+  .bottom1, .bottom2, .bottom3 {margin-top: 10px;}
+}
