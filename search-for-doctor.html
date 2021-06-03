@@ -3,13 +3,15 @@
     <title>Search for Doctor...</title>
     <style>
         
-        .doctorprofile {height: 160px; width: 300px; border: 1px solid white; padding: 10px; vertical-align: middle; }
+        .doctorprofile {height: max-content; width: max-content; border: 1px solid white; padding: 10px; vertical-align: middle; }
+        a {color: brown;}
+        a:hover {color: red;}
 
     </style>
     <link rel="stylesheet" href="commonstyle.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="mobileview.css">
-    <link rel="icon" href="vetlogo.png">
+    <link rel="icon" href="images/vetlogo.png">
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
@@ -18,14 +20,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.min.css">
     <script src="https://kit.fontawesome.com/65d13b9961.js" crossorigin="anonymous"></script>
 </head>
-<body style="background-color: #333; color: whitesmoke;">
+<body style="background-image: url('images/doctorBackground.jpg'); background-repeat: no-repeat; background-size: cover; color: whitesmoke ;">
     <div class="top1">
     </div>
 
     <div class="top2">
         <ul class="unlist">
-            <li class="list"><a class="active" href="index.html">Home</a></li>
+            <li class="list"><a href="index.html">Home</a></li>
             <li class="list"><a href="about.html">About</a></li>
+            <li class="list"><a href="contact.html">Contact Us</a></li>
         </ul>
     </div>
 
@@ -37,20 +40,45 @@
         <form>
           <label>Select Town: &nbsp;&nbsp;&nbsp;</label> 
           <select id="diseases" class="chosen" onchange="doctordisplay(this)">
-            <option>...</option>
-            <option id="sang" value="1">Sangamner</option>
-            <option id="ant" value="2"></option>
-            <option id="bq" value="3"></option>
-            <option id="rabies" value="4"></option>
+            <option aria-placeholder=""></option>
+            <option id="nagar" value="1">Ahmednagar</option>
+            <option id="aurangabad" value="2">Aurangabad</option>
+            <option id="nashik" value="3">Nashik</option>
+            <option id="pune" value="4">Pune</option>
+            <option id="sangamner" value="5">Sangamner</option>
           </select>
         </form>
         
         <br><br><br>
         <span id="dis1" class="doctorprofile" style="display: none;" >
-            <p>Name: Dr. Suresh Ghule</p>
-            <p>Mobile No.: 9850547504</p>
-            <p>Email: drsureshghule@gmail.com</p>
-            <p>Address: Panchyat Samiti, Sangamner</p>
+            <p>Name: Dr. S. K. Tumbhare (DAHO, Ahmednagar)</p>
+            <p>Mobile No.: 7588541292</p>
+            <p>Email: <a href="mailto: dahonagar@gmail.com">dahonagar@gmail.com</a></p>
+            <p>Office Address: Zilha Parishad, Ahmednagar</p>
+        </span>
+        <span id="dis2" class="doctorprofile" style="display: none;" >
+            <p>Name: Dr. Surekha Mane (DAHO, Aurangabad)</p>
+            <p>Mobile No.: 9527707230</p>
+            <p>Email: <a href="mailto: dahoaurangabad@gmail.com">dahoaurangabad@gmail.com</a></p>
+            <p>Office Address: Zilha Parishad, Aurangabad</p>
+        </span>
+        <span id="dis3" class="doctorprofile" style="display: none;" >
+            <p>Name: Dr. V. D. Garje (DAHO, Nashik)</p>
+            <p>Mobile No.: 9822455841</p>
+            <p>Email: <a href="mailto: dahonashik@gmail.com">dahonashik@gmail.com</a></p>
+            <p>Office Address: Ashok Stambh,Gangapur Road, Nashik-2</p>
+        </span>
+        <span id="dis4" class="doctorprofile" style="display: none;" >
+          <p>Name: Dr. Vidhate (DAHO, Pune)</p>
+          <p>Mobile No.: 7588328467</p>
+          <p>Email: <a href="mailto: dahopune@gmail.com">dahopune@gmail.com</a></p>
+          <p>Office Address: Zilha Parishad Pune- 411 001</p>
+        </span>
+        <span id="dis5" class="doctorprofile" style="display: none;" >
+          <p>Name: Dr. P.M. Pokharkar (LDO Extension, Sangamner)</p>
+          <p>Mobile No.: 8329487725</p>
+          <p>Email: <a href="mailto: l.d.o.ex.sangamner@gmail.com">l.d.o.ex.sangamner@gmail.com</a></p>
+          <p>Office Address: Panchayat Samiti, Sangamner</p>
         </span>
         
         <script>
@@ -60,30 +88,37 @@
             {
               document.getElementById('dis1').style.display = "block";
               document.getElementById('dis2').style.display = "none"; document.getElementById('dis3').style.display = "none";
-              document.getElementById('dis4').style.display = "none"; 
+              document.getElementById('dis4').style.display = "none"; document.getElementById('dis5').style.display = "none"; 
             }
             else if (select.value==2)
             {
               document.getElementById('dis2').style.display = "block";
               document.getElementById('dis1').style.display = "none"; document.getElementById('dis3').style.display = "none";
-              document.getElementById('dis4').style.display = "none"; 
+              document.getElementById('dis4').style.display = "none"; document.getElementById('dis5').style.display = "none";
             }
             else if (select.value==3)
             {
               document.getElementById('dis3').style.display = "block";
               document.getElementById('dis1').style.display = "none"; document.getElementById('dis2').style.display = "none";
-              document.getElementById('dis4').style.display = "none"; 
+              document.getElementById('dis4').style.display = "none"; document.getElementById('dis5').style.display = "none";
             }
             else if (select.value==4)
             {
               document.getElementById('dis4').style.display = "block";
               document.getElementById('dis1').style.display = "none"; document.getElementById('dis2').style.display = "none";
-              document.getElementById('dis3').style.display = "none"; 
+              document.getElementById('dis3').style.display = "none"; document.getElementById('dis5').style.display = "none";
+            }
+            else if (select.value==5)
+            {
+              document.getElementById('dis5').style.display = "block";
+              document.getElementById('dis1').style.display = "none"; document.getElementById('dis2').style.display = "none";
+              document.getElementById('dis3').style.display = "none"; document.getElementById('dis4').style.display = "none";
             }
             else
             { 
               document.getElementById('dis1').style.display = "none"; document.getElementById('dis2').style.display = "none";
               document.getElementById('dis3').style.display = "none"; document.getElementById('dis4').style.display = "none";
+              document.getElementById('dis5').style.display = "none";
             }
           }
         </script>

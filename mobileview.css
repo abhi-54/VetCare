@@ -4,4 +4,14 @@
   .top2, .content1, .bottom2 {width: 98%; height: auto;}
   .dropdown, .dropbtn {width: 100%;}
   .bottom1, .bottom2, .bottom3 {margin-top: 10px;}
+  
+  input[type=text], input[type=email], textarea {resize: vertical; width: 350px; background-color: rgb(225, 225, 225); border-radius: 5px;}
+  input[type=text] {height: 25px;}
+  input[type=email] {height: 25px;}
+  input[type=submit], input[type=reset] {background-color: #555; color: rgb(225, 225, 225); border-radius: 6px; border: 1px solid #4CAF50; font-size: 14px;}
+  input[type=submit] {margin-top: 6px; margin-left: 290px; }
+  input[type=reset] {color: rgb(225, 225, 225); }
+  input[type=submit]:hover, input[type=reset]:hover {background-color: #4CAF50;}
+  .leftlable {float: left; margin-left: 30px; width: 130px;}
+  .rightbox {float: right; width: 400px; margin-right: 450px;}
 }
