@@ -1,9 +1,8 @@
 ::-webkit-scrollbar {width: 8px; overflow-x:hidden; height: 8px;}
-::-webkit-scrollbar-track {background: transparent}
-::-webkit-scrollbar-thumb {background: #888;}
-::-webkit-scrollbar-thumb:hover {background: #999;}
+::-webkit-scrollbar-track {background: #999}
+::-webkit-scrollbar-thumb {background: #555;}
+::-webkit-scrollbar-thumb:hover {background: #777;}
 select {width: 400px;}
-.chosen-container .chosen-results li.highlighted{background-color: #4CAF50;background-image:-webkit-gradient(linear,left top,left bottom,color-stop(20%,#4CAF50),color-stop(90%,#4CAF50));}
 
 .top1 {width: 12%; height: 15%; float: left;}
        
@@ -32,13 +31,17 @@ select {width: 400px;}
 
 .right1 {width: 20%; height: 100%; float: left;}
 
+#dis1 {background: rgba(0, 0, 0, 0.6); padding: 10px; border-radius: 20px;}
+#dis2 {background: rgba(0, 0, 0, 0.6); padding: 10px; border-radius: 20px;}
+#dis3 {background: rgba(0, 0, 0, 0.6); padding: 10px; border-radius: 20px;}
+#dis4 {background: rgba(0, 0, 0, 0.6); padding: 10px; border-radius: 20px;}
+#dis5 {background: rgba(0, 0, 0, 0.6); padding: 10px; border-radius: 20px;}
 
 .bottom2 {width: 100%; height: 19%; background-color: #444; float: left;}
 
 .bottoma {color: wheat;}
 .bottoma:hover {color: skyblue;} 
 body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
-select { background-color: black; }
 
 img {
   opacity: 0.5;
